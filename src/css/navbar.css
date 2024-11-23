@@ -1,0 +1,34 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-large) var(--spacing-xl);
+  background: var(--color-primary);
+}
+
+.navbar__header {
+  flex-grow: 1;
+  color: var(--font-color-light);
+}
+
+.navbar__navigation {
+  display: flex;
+  gap: 3rem;
+}
+
+.navbar__navigation-link {
+  color: var(--font-color-light);
+  border-bottom: 2px solid transparent;
+}
+
+.navbar__navigation-link:hover {
+  border-bottom: 2px solid var(--font-color-light);
+}
+
+.navbar__navigation-link--active {
+  border-bottom: 2px solid var(--font-color-light);
+}
+
+.navbar__hamburger-menu {
+  display: none;
+}

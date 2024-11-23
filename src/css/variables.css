@@ -1,7 +1,8 @@
 :root {
   /* Colors */
-  --color-primary: #ffffff;
+  --color-primary: #272727;
   --color-text: #ffffff;
+  --font-color-light: #ffffff;
   --button-color: #ffffff;
   --button-color-hover: #ffffff;
   --button-color-active: #ffffff;
