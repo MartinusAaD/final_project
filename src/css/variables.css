@@ -1,0 +1,22 @@
+:root {
+  /* Colors */
+  --color-primary: #ffffff;
+  --color-text: #ffffff;
+  --button-color: #ffffff;
+  --button-color-hover: #ffffff;
+  --button-color-active: #ffffff;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-small: 1rem;
+  --spacing-medium: 1.5rem;
+  --spacing-large: 2rem;
+  --spacing-xl: 3rem;
+
+  /* Font Size */
+  --font-size-xs: 0.5rem;
+  --font-size-small-base: 1rem;
+  --font-size-medium: 1.2rem;
+  --font-size-large: 1.5rem;
+  --font-size-xl: 2rem;
+}
