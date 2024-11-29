@@ -6,13 +6,18 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <h1 class="navbar__header">Storename</h1>
+        <h1 class="navbar__header">
+          <a href="./index.html">Storename</a>
+        </h1>
         <ul class="navbar__navigation">
           <li>
             <a
@@ -22,8 +27,8 @@
             >
           </li>
           <li>
-            <a href="./pages/about.html" class="navbar__navigation-link"
-              >About</a
+            <a href="./pages/basket.html" class="navbar__navigation-link"
+              >Basket</a
             >
           </li>
           <li>
@@ -38,12 +43,55 @@
           </li>
         </ul>
         <div>
-          <button class="navbar__hamburger-menu"><img src="#" alt="" /></button>
+          <button class="navbar__hamburger-menu">
+            <img src="#" alt="Hamburger menu" />
+          </button>
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="console-container">
+        <h2 class="console-header">Consoles</h2>
+        <div class="consoles"></div>
+      </div>
+      <div class="games-container">
+        <h2 class="games-header">Games</h2>
+        <div class="games"></div>
+      </div>
+    </main>
+    <footer>
+      <h2 class="footer__heading">Stay up to date!</h2>
+      <div class="footer__socials-container">
+        <ul class="footer__socials-list">
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="./assets/icons/facebook.svg"
+                alt="Image with link to Facebook"
+            /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="./assets/icons/instagram.svg"
+                alt="Image with link to Instagram"
+            /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img src="./assets/icons/x.svg" alt="Image with link to X"
+            /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="./assets/icons/tiktok.svg"
+                alt="Image with link to Tiktok"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="./js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,33 @@
+footer {
+  color: var(--font-color-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-large);
+  letter-spacing: 0.2rem;
+  background-color: var(--color-primary);
+  padding: var(--spacing-large);
+}
+
+.footer__heading {
+}
+
+.footer__socials-container {
+}
+
+.footer__socials-list {
+  display: flex;
+  gap: var(--spacing-large);
+}
+
+.footer__social {
+  background-color: white;
+  padding: var(--spacing-small);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer__social:hover {
+  opacity: 0.8;
+}
