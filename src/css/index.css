@@ -1,11 +1,14 @@
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 .products-container {
-  width: 80%;
-  height: 600px;
-  display: grid;
+  width: 85%;
   color: var(--font-color-light);
 }
 
 .product-container {
-  background-color: var(--color-light);
+  background-color: var(--color-secondary);
 }
-
