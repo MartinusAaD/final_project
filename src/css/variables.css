@@ -2,8 +2,9 @@
   /* Colors */
   --color-primary: #171d36;
   --color-secondary: #2a2a2a;
-  --color-light: rgb(235, 235, 235);
+  --color-light: rgb(255, 255, 255);
   --font-color-light: #ffffff;
+  --font-color-dark: black;
   --button-color: #ffffff;
   --button-color-hover: #ffffff;
   --button-color-active: #ffffff;
