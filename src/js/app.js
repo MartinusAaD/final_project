@@ -1,5 +1,6 @@
 const categoryArray = ["Consoles", "Games"];
 
+// Consoles
 const consolesArray = [
   // Nintendo i = 0
   [
@@ -37,13 +38,14 @@ const consolesArray = [
   [
     {
       name: "Playstation 5 Slim Digital",
-      image: "",
+      image: "../src/assets/images/sony/ps5-slim-digital.png",
       info: "",
       price: 0,
     },
   ],
 ];
 
+// Games
 const gamesArray = [
   // Nintendo i = 0
   [
@@ -109,7 +111,7 @@ const gamesArray = [
     },
     {
       name: "The Legend of Zelda: Tears of the Kingdom",
-      image: "../src/assets/images/nintendo/zelda-tears-of-the-kingdom",
+      image: "../src/assets/images/nintendo/zelda-tears-of-the-kingdom.png",
       info: "Info",
       price: 0,
     },
@@ -119,7 +121,7 @@ const gamesArray = [
   [
     {
       name: "",
-      image: "../src/assets/images/nintendo/hogwarts-legacy.png",
+      image: "",
       info: "",
       price: 0,
     },
@@ -141,59 +143,139 @@ const nintendo = 0;
 const microsoft = 1;
 const sony = 2;
 
-// Document Queries
 const main = document.querySelector("main");
 
-// Create Products Container
-const productsContainer = document.createElement("div");
-const productsContainerHeader = document.createElement("h2");
-const productContainer = document.createElement("div");
-const productHeader = document.createElement("h3");
-const productImage = document.createElement("img");
-const productInfo = document.createElement("p");
-const productPriceBasketContainer = document.createElement("div");
-const productPrice = document.createElement("h4");
-const productBasket = document.createElement("button");
-const productAddToBasket = document.createElement("img");
+// Category Counters
+let countConsoles = 0;
+let countGames = 0;
 
-// Add classes to product variables
-productsContainer.classList.add("products-container");
-productsContainerHeader.classList.add("products__header");
-productContainer.classList.add("product-container");
-productHeader.classList.add("product__header");
-productImage.classList.add("product__image");
-productInfo.classList.add("product__info");
-productPriceBasketContainer.classList.add("product__price-basket-container");
-productPrice.classList.add("product__price");
-productBasket.classList.add("product__basket");
-productAddToBasket.classList.add("product__add-to-basket");
+// Adding Containers, Consoles and Games to the page
+for (let i = 0; i < categoryArray.flat().length; i++) {
+  // Create Product Container and Header
+  const productsContainer = document.createElement("div");
+  const productsContainerHeader = document.createElement("h2");
 
-// Appending Product Container
-main.append(productsContainer);
-productsContainer.append(productsContainerHeader, productContainer);
-productContainer.append(
-  productImage,
-  productHeader,
-  productInfo,
-  productPriceBasketContainer
-);
-productPriceBasketContainer.append(productPrice, productBasket);
-productBasket.append(productAddToBasket);
+  // Adding Classes
+  productsContainer.classList.add("products-container");
+  productsContainerHeader.classList.add("products__header");
 
-// Adding Category Headers
-productsContainerHeader.textContent = categoryArray[0];
+  // Appending
+  main.append(productsContainer);
+  productsContainer.append(productsContainerHeader);
 
-// Adding Product Image
-productImage.src = consolesArray[nintendo][0].image;
+  // Adding Category Headers
+  productsContainerHeader.textContent = categoryArray[i];
 
-// Adding Product Headers
-productHeader.textContent = consolesArray[nintendo][0].name;
+  // Inserting Consoles
+  if (i === 0) {
+    for (let j = 0; j < consolesArray.flat().length; j++) {
+      // Creating Elements
+      const productContainer = document.createElement("div");
+      const productImage = document.createElement("img");
+      const productHeader = document.createElement("h3");
+      const productInfo = document.createElement("p");
+      const productPriceBasketContainer = document.createElement("div");
+      const productPrice = document.createElement("h4");
+      const productBasket = document.createElement("button");
+      const productAddToBasket = document.createElement("img");
 
-// Adding Product Info
-productInfo.textContent = consolesArray[nintendo][0].info;
+      // Adding Classes
+      productContainer.classList.add("product-container");
+      productImage.classList.add("product__image");
+      productHeader.classList.add("product__header");
+      productInfo.classList.add("product__info");
+      productPriceBasketContainer.classList.add(
+        "product__price-basket-container"
+      );
+      productPrice.classList.add("product__price");
+      productBasket.classList.add("product__basket");
+      productAddToBasket.classList.add("product__add-to-basket");
 
-// Adding Product Price
-productPrice.textContent = `${consolesArray[nintendo][0].price} ,-`;
+      // Appending Product Container
+      productsContainer.append(productContainer);
+      productContainer.append(
+        productImage,
+        productHeader,
+        productInfo,
+        productPriceBasketContainer
+      );
+      productPriceBasketContainer.append(productPrice, productBasket);
+      productBasket.append(productAddToBasket);
 
-// Adding Basket SVG
-productAddToBasket.src = "../src/assets/icons/plus.svg";
+      // Adding Product Image
+      productImage.src = consolesArray.flat()[countConsoles].image;
+
+      // Adding Product Headers
+      productHeader.textContent = consolesArray.flat()[countConsoles].name;
+
+      // Adding Product Info
+      productInfo.textContent = consolesArray.flat()[countConsoles].info;
+
+      // Adding Product Price
+      productPrice.textContent = `${
+        consolesArray.flat()[countConsoles].price
+      } ,-`;
+
+      // Adding Basket SVG
+      productAddToBasket.src = "../src/assets/icons/plus.svg";
+
+      //
+      countConsoles++;
+    }
+  }
+  // Inserting Games
+  else if (i === 1) {
+    for (let j = 0; j < gamesArray.flat().length; j++) {
+      // Creating Elements
+      const productContainer = document.createElement("div");
+      const productImage = document.createElement("img");
+      const productHeader = document.createElement("h3");
+      const productInfo = document.createElement("p");
+      const productPriceBasketContainer = document.createElement("div");
+      const productPrice = document.createElement("h4");
+      const productBasket = document.createElement("button");
+      const productAddToBasket = document.createElement("img");
+
+      // Adding Classes
+      productContainer.classList.add("product-container");
+      productImage.classList.add("product__image");
+      productHeader.classList.add("product__header");
+      productInfo.classList.add("product__info");
+      productPriceBasketContainer.classList.add(
+        "product__price-basket-container"
+      );
+      productPrice.classList.add("product__price");
+      productBasket.classList.add("product__basket");
+      productAddToBasket.classList.add("product__add-to-basket");
+
+      // Appending Product Container
+      productsContainer.append(productContainer);
+      productContainer.append(
+        productImage,
+        productHeader,
+        productInfo,
+        productPriceBasketContainer
+      );
+      productPriceBasketContainer.append(productPrice, productBasket);
+      productBasket.append(productAddToBasket);
+
+      // Adding Product Image
+      productImage.src = gamesArray.flat()[countGames].image;
+
+      // Adding Product Headers
+      productHeader.textContent = gamesArray.flat()[countGames].name;
+
+      // Adding Product Info
+      productInfo.textContent = gamesArray.flat()[countGames].info;
+
+      // Adding Product Price
+      productPrice.textContent = `${gamesArray.flat()[countGames].price} ,-`;
+
+      // Adding Basket SVG
+      productAddToBasket.src = "../src/assets/icons/plus.svg";
+
+      //
+      countGames++;
+    }
+  }
+}
