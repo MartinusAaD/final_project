@@ -8,6 +8,7 @@ footer {
   letter-spacing: 0.2rem;
   background-color: var(--color-primary);
   padding: var(--spacing-large);
+  margin-top: var(--spacing-large);
 }
 
 .footer__heading {

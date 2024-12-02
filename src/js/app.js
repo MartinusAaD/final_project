@@ -4,16 +4,16 @@ const productsArray = [
   {
     name: "Nintendo Switch Neon",
     image: "../src/assets/images/nintendo/nintendo-switch-oled-neon.png",
-    info: "This is info about the switch",
-    price: 0,
+    info: "Nintendo Switch Neon offer versatile gaming with OLED displays, portable and docked modes.",
+    price: 4395,
     category: "console",
     brand: "nintendo",
   },
   {
     name: "Nintendo Switch White",
     image: "../src/assets/images/nintendo/nintendo-switch-oled-white.png",
-    info: "This is info about the switch",
-    price: 0,
+    info: "Nintendo Switch White offer versatile gaming with OLED displays, portable and docked modes.",
+    price: 4395,
     category: "console",
     brand: "nintendo",
   },
@@ -22,16 +22,16 @@ const productsArray = [
   {
     name: "Xbox-X",
     image: "../src/assets/images/microsoft/xbox-x.png",
-    info: "This is info about the xbox-x",
-    price: 4999,
+    info: "Xbox X offers powerful gaming with 4K resolution, fast performance, and extensive game library.",
+    price: 6760,
     category: "console",
     brand: "microsoft",
   },
   {
     name: "Xbox-S",
     image: "../src/assets/images/microsoft/xbox-s.png",
-    info: "This is info about the xbox-s",
-    price: 3999,
+    info: "Xbox S provides affordable gaming with 1440p resolution, fast performance, and access to Xbox Game Pass.",
+    price: 3499,
     category: "console",
     brand: "microsoft",
   },
@@ -40,8 +40,8 @@ const productsArray = [
   {
     name: "Playstation 5 Slim Digital",
     image: "../src/assets/images/sony/ps5-slim-digital.png",
-    info: "",
-    price: 0,
+    info: "PS5 Slim Digital offers fast performance, 4K gaming, and a digital-only library for immersive experiences.",
+    price: 5690,
     category: "console",
     brand: "sony",
   },
@@ -51,108 +51,108 @@ const productsArray = [
   {
     name: "Hogwarts Legacy",
     image: "../src/assets/images/nintendo/hogwarts-legacy.png",
-    info: "This is info about the game",
-    price: 0,
+    info: "Hogwarts Legacy is an open-world RPG set in the Wizarding World, featuring magic, exploration, and adventure.",
+    price: 549,
     category: "game",
     brand: "nintendo",
   },
   {
     name: "Mario Kart 8 Deluxe",
     image: "../src/assets/images/nintendo/mario-kart-8.png",
-    info: "Info",
-    price: 0,
+    info: "Mario Kart 8 Deluxe offers exciting racing, vibrant tracks, and multiplayer fun with customizable characters and karts.",
+    price: 599,
     category: "game",
     brand: "nintendo",
   },
   {
     name: "Mario Party Jamboree",
     image: "../src/assets/images/nintendo/mario-party-jamboree.png",
-    info: "Info",
-    price: 0,
+    info: "Mario Party Jamboree offers fun, multiplayer mini-games with iconic Mario characters for lively party gameplay.",
+    price: 599,
     category: "game",
     brand: "nintendo",
   },
   {
     name: "Minecraft",
     image: "../src/assets/images/nintendo/minecraft.png",
-    info: "Info",
-    price: 0,
+    info: "Minecraft is a creative sandbox game where players build, explore, and survive in a blocky world.",
+    price: 199,
     category: "game",
     brand: "nintendo",
   },
   {
-    name: "Prince of Persia",
+    name: "Prince of Persia - The Lost Crown",
     image: "../src/assets/images/nintendo/prince-of-persia.png",
-    info: "Info",
-    price: 0,
+    info: "Prince of Persia: The Lost Crown is an action-adventure game with platforming, puzzles, and intense combat.",
+    price: 399,
     category: "game",
     brand: "nintendo",
   },
   {
     name: "Super Mario Odyssey",
     image: "../src/assets/images/nintendo/super-mario-odyssey.png",
-    info: "Info",
-    price: 0,
+    info: "Super Mario Odyssey is a platformer where Mario explores diverse worlds, solving puzzles and collecting Power Moons.",
+    price: 549,
     category: "game",
     brand: "nintendo",
   },
   {
     name: "Super Mario Wonder",
     image: "../src/assets/images/nintendo/super-mario-wonder.png",
-    info: "Info",
-    price: 0,
+    info: "Super Mario Wonder is a vibrant platformer with creative levels, unique power-ups, and multiplayer fun.",
+    price: 599,
     category: "game",
     brand: "nintendo",
   },
   {
     name: "Super Smash Bros Ultimate",
     image: "../src/assets/images/nintendo/super-smash-bros-ultimate.png",
-    info: "Info",
-    price: 0,
+    info: "Super Smash Bros. Ultimate is a fast-paced fighting game with iconic characters, stages, and multiplayer action.",
+    price: 499,
     category: "game",
     brand: "nintendo",
   },
   {
     name: "The Legend of Zelda: Breath of The Wild",
     image: "../src/assets/images/nintendo/zelda-breath-of-the-wild.png",
-    info: "Info",
-    price: 0,
+    info: "Breath of the Wild is an open-world adventure with exploration, puzzles, and combat.",
+    price: 599,
     category: "game",
     brand: "nintendo",
   },
   {
     name: "The Legend of Zelda: Echo of Wisdom",
     image: "../src/assets/images/nintendo/zelda-echo-of-wisdom.png",
-    info: "Info",
-    price: 0,
+    info: "Echoes of Wisdom is an adventure game featuring puzzles, exploration, and immersive storytelling.",
+    price: 649,
     category: "game",
     brand: "nintendo",
   },
   {
     name: "The Legend of Zelda: Tears of the Kingdom",
     image: "../src/assets/images/nintendo/zelda-tears-of-the-kingdom.png",
-    info: "Info",
-    price: 0,
+    info: "tears of the Kingdom is an epic adventure with exploration, puzzles, and dynamic combat.",
+    price: 599,
     category: "game",
     brand: "nintendo",
   },
 
   // Microsoft
   {
-    name: "",
-    image: "",
-    info: "",
-    price: 0,
+    name: "Hogwarts Legacy - Xbox",
+    image: "../src/assets/images/microsoft/hogwarts-legacy-xbox.png",
+    info: "Hogwarts Legacy is an open-world RPG set in the Wizarding World, featuring magic, exploration, and adventure.",
+    price: 399,
     category: "game",
     brand: "microsoft",
   },
 
   // Sony
   {
-    name: "",
-    image: "",
-    info: "",
-    price: 0,
+    name: "Hogwarts Legacy - Ps5",
+    image: "../src/assets/images/sony/hogwarts-legacy-ps5.png",
+    info: "Hogwarts Legacy is an open-world RPG set in the Wizarding World, featuring magic, exploration, and adventure.",
+    price: 399,
     category: "game",
     brand: "sony",
   },
@@ -180,19 +180,26 @@ const main = document.querySelector("main");
 // Adding Container Categories and products
 for (let i = 0; i < 2; i++) {
   // Create Product Container and Header
+  const categoryContainer = document.createElement("div");
+  const categoryHeader = document.createElement("h2");
   const productsContainer = document.createElement("div");
-  const productsContainerHeader = document.createElement("h2");
 
   // Adding Classes
-  productsContainer.classList.add("products-container");
-  productsContainerHeader.classList.add("products__header");
+  categoryContainer.classList.add("category-container");
+  categoryHeader.classList.add("category__header");
+  if (i === 0) {
+    productsContainer.classList.add("products-container--scroll");
+  }
+  if (i === 1) {
+    productsContainer.classList.add("products-container");
+  }
 
   // Appending
-  main.append(productsContainer);
-  productsContainer.append(productsContainerHeader);
+  main.append(categoryContainer);
+  categoryContainer.append(categoryHeader, productsContainer);
 
   // Adding Category Headers
-  productsContainerHeader.textContent = categoriesArray[i];
+  categoryHeader.textContent = categoriesArray[i];
 
   // Inserting Consoles
   if (i === 0) {
