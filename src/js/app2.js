@@ -240,7 +240,7 @@ for (let i = 0; i < 2; i++) {
       productInfo.textContent = consolesArray[j].info;
 
       // Adding Product Price
-      productPrice.textContent = `${consolesArray[j].price} ,-`;
+      productPrice.textContent = `${consolesArray.price} ,-`;
 
       // Adding Basket SVG
       productAddToBasket.src = "../src/assets/icons/plus.svg";
