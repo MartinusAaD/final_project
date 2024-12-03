@@ -95,6 +95,10 @@ main {
   background-color: var(--color-secondary);
 }
 
+.product__basket:hover {
+  opacity: 0.9;
+}
+
 .product__basket .product__add-to-basket {
   transition: 0.1s;
 }

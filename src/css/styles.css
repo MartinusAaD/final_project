@@ -12,6 +12,7 @@ body {
 
 main {
   width: 100%;
+  color: var(--font-color-light);
 }
 
 a {

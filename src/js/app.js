@@ -20,7 +20,7 @@ const productsArray = [
 
   // Microsoft
   {
-    name: "Xbox-X",
+    name: "Xbox X",
     image: "../src/assets/images/microsoft/xbox-x.png",
     info: "Xbox X offers powerful gaming with 4K resolution, fast performance, and extensive game library.",
     price: 6760,
@@ -28,7 +28,7 @@ const productsArray = [
     brand: "microsoft",
   },
   {
-    name: "Xbox-S",
+    name: "Xbox S",
     image: "../src/assets/images/microsoft/xbox-s.png",
     info: "Xbox S provides affordable gaming with 1440p resolution, fast performance, and access to Xbox Game Pass.",
     price: 3499,

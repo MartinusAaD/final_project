@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <h1 class="navbar__header">
+          <a href="../index.html">Storename</a>
+        </h1>
+        <div class="navbar__search">
+          <label for="search"></label>
+          <input
+            type="search"
+            name=""
+            id="search"
+            class="search__input"
+            placeholder=" ..."
+          />
+        </div>
+        <ul class="navbar__navigation">
+          <li>
+            <a
+              href="../index.html"
+              class="navbar__navigation-link navbar__navigation-link--active"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="./basket.html" class="navbar__navigation-link">Order</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="navbar__navigation-link">Contact</a>
+          </li>
+          <li>
+            <a href="./login.html" class="navbar__navigation-link">Login</a>
+          </li>
+        </ul>
+        <div class="navbar__navigation-menu">
+          <button class="navigation-menu__hamburger-menu">
+            <img src="#" alt="Hamburger menu" />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main>
+      <form class="form__contact-container">
+        <label for="fullname">Full Name: </label>
+        <input
+          type="text"
+          class="fullname"
+          name="fullname"
+          required
+          placeholder="John Doe"
+          minlength="1"
+        />
+        <label for="ordernumber">Order Number: </label>
+        <input
+          type="text"
+          class="ordernumber"
+          name="ordernumber"
+          required
+          placeholder="Minimum of 7 numbers"
+          pattern="[0-9]{7-999}"
+        />
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          class="email"
+          name="email"
+          required
+          placeholder="john.doe@email.com"
+          minlength="1"
+        />
+        <label for="">Phone Number: </label>
+        <input
+          type="tel"
+          class="phonenumber"
+          name="phonenumber"
+          required
+          placeholder="12345678"
+          pattern="[0-9]{8}"
+        />
+        <label for="message">Message: </label>
+        <textarea
+          class="message"
+          name="message"
+          required
+          placeholder="Max 500 characters"
+          minlength="1"
+          maxlength="500"
+        ></textarea>
+        <p class="form__paragraph">
+          An automatic reply will be sent to your email to confirm it has been
+          received. Your message will be answered within 2 buisness days.
+        </p>
+        <button class="form__submit-button">Send Message</button>
+      </form>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <h2 class="footer__heading">Stay up to date!</h2>
+      <div class="footer__socials-container">
+        <ul class="footer__socials-list">
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="../assets/icons/facebook.svg"
+                alt="Image with link to Facebook"
+            /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="../assets/icons/instagram.svg"
+                alt="Image with link to Instagram"
+            /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img src="../assets/icons/x.svg" alt="Image with link to X"
+            /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="../assets/icons/tiktok.svg"
+                alt="Image with link to Tiktok"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src=""></script>
+  </body>
+</html>
