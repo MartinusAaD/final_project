@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <h1 class="navbar__header">
+          <a href="../index.html">Storename</a>
+        </h1>
+        <div class="navbar__search">
+          <label for="search"></label>
+          <input
+            type="search"
+            name=""
+            id="search"
+            class="search__input"
+            placeholder=" ..."
+          />
+        </div>
+        <ul class="navbar__navigation">
+          <li>
+            <a href="../index.html" class="navbar__navigation-link">Home</a>
+          </li>
+          <li>
+            <a href="./basket.html" class="navbar__navigation-link">Order</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="navbar__navigation-link">Contact</a>
+          </li>
+          <li>
+            <a
+              href="./login.html"
+              class="navbar__navigation-link navbar__navigation-link--active"
+              >Login</a
+            >
+          </li>
+        </ul>
+        <div class="navbar__navigation-menu">
+          <button class="navigation-menu__hamburger-menu">
+            <img
+              src="../assets/icons/hamburger-menu.svg"
+              alt="Hamburger menu"
+            />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main>
+      <form class="form__login-container">
+        <label for="username">Email / Phone number:</label>
+        <input
+          type="text"
+          class="username"
+          name="username"
+          id="username"
+          required
+        />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          class="password"
+          name="password"
+          id="password"
+          required
+          minlength="8"
+        />
+        <p class="password-requirement">
+          (Password must be at least 8 characters long, include uppercase and
+          lowercase letters, a number, and a special character.)
+        </p>
+        <button class="login__register" type="button">
+          Don't have an account? Register here!
+        </button>
+        <button class="form__submit-button">Login</button>
+      </form>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <h2 class="footer__heading">Stay up to date!</h2>
+      <div class="footer__socials-container">
+        <ul class="footer__socials-list">
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="../assets/icons/facebook.svg"
+                alt="Image with link to Facebook"
+            /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="../assets/icons/instagram.svg"
+                alt="Image with link to Instagram"
+            /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img src="../assets/icons/x.svg" alt="Image with link to X"
+            /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="../assets/icons/tiktok.svg"
+                alt="Image with link to Tiktok"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../js/appLogin.js"></script>
+  </body>
+</html>

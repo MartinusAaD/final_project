@@ -31,17 +31,17 @@
         </div>
         <ul class="navbar__navigation">
           <li>
-            <a
-              href="../index.html"
-              class="navbar__navigation-link navbar__navigation-link--active"
-              >Home</a
-            >
+            <a href="../index.html" class="navbar__navigation-link">Home</a>
           </li>
           <li>
             <a href="./basket.html" class="navbar__navigation-link">Order</a>
           </li>
           <li>
-            <a href="./contact.html" class="navbar__navigation-link">Contact</a>
+            <a
+              href="./contact.html"
+              class="navbar__navigation-link navbar__navigation-link--active"
+              >Contact</a
+            >
           </li>
           <li>
             <a href="./login.html" class="navbar__navigation-link">Login</a>
@@ -49,7 +49,10 @@
         </ul>
         <div class="navbar__navigation-menu">
           <button class="navigation-menu__hamburger-menu">
-            <img src="#" alt="Hamburger menu" />
+            <img
+              src="../assets/icons/hamburger-menu.svg"
+              alt="Hamburger menu"
+            />
           </button>
         </div>
       </nav>
@@ -98,10 +101,17 @@
           class="message"
           name="message"
           required
-          placeholder="Max 500 characters"
+          placeholder="Max 500 characters ..."
           minlength="1"
           maxlength="500"
         ></textarea>
+        <input
+          type="file"
+          multiple
+          accept="pdf, png, jpg, jpeg"
+          class="files"
+          name="files"
+        />
         <p class="form__paragraph">
           An automatic reply will be sent to your email to confirm it has been
           received. Your message will be answered within 2 buisness days.
@@ -143,6 +153,6 @@
         </ul>
       </div>
     </footer>
-    <script src=""></script>
+    <script src="../js/appContact.js"></script>
   </body>
 </html>

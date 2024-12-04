@@ -17,7 +17,6 @@ header {
 }
 
 .navbar__search {
-  width: 100%;
   min-width: 300px;
   display: flex;
   justify-content: center;
@@ -26,7 +25,7 @@ header {
 
 .search__input {
   height: 2rem;
-  width: 50%;
+  width: 80%;
   padding: var(--spacing-xs);
   font-family: Roboto-Regular;
   border-top-left-radius: 1rem;
@@ -55,4 +54,34 @@ header {
 }
 
 .navigation-menu__hamburger-menu {
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 880px) {
+  .navbar__navigation {
+    display: none;
+  }
+
+  .navbar__navigation-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: var(--spacing-small);
+    padding: var(--spacing-small) 0;
+  }
+  .navbar__header {
+    flex-basis: 100%;
+  }
+  .navbar__search {
+    flex-grow: 1;
+    min-width: 0px;
+  }
+  .search__input {
+    width: 100%;
+  }
 }
