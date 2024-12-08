@@ -19,7 +19,10 @@ footer {
 
 .footer__socials-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: var(--spacing-large);
+  flex-wrap: wrap;
 }
 
 .footer__social {
@@ -31,4 +34,11 @@ footer {
 
 .footer__social:hover {
   opacity: 0.8;
+}
+
+.footer__copyright {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid var(--color-light);
+  padding-top: 2rem;
 }

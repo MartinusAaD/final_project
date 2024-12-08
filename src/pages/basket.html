@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/basket.css" />
+    <title>Final Project - Basket</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <h1 class="navbar__header">
+          <a href="../index.html">Storename</a>
+        </h1>
+        <div class="navbar__search">
+          <label for="search"></label>
+          <input
+            type="search"
+            name=""
+            id="search"
+            class="search__input"
+            placeholder=" ..."
+          />
+        </div>
+        <ul class="navbar__navigation">
+          <li>
+            <a href="../index.html" class="navbar__navigation-link">Home</a>
+          </li>
+          <li>
+            <a
+              href="./basket.html"
+              class="navbar__navigation-link navbar__navigation-link--active"
+              >Order</a
+            >
+          </li>
+          <li>
+            <a href="./contact.html" class="navbar__navigation-link">Contact</a>
+          </li>
+          <li>
+            <a href="./login.html" class="navbar__navigation-link">Login</a>
+          </li>
+        </ul>
+        <div class="navbar__navigation-menu">
+          <button class="navigation-menu__hamburger-menu">
+            <img
+              src="../assets/icons/hamburger-menu.svg"
+              alt="Hamburger menu"
+            />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main>
+      <form class="form__basket-container">
+        <fieldset class="form__basket">
+          <legend class="form__basket-legend">Basket</legend>
+          <ul class="basket__product-list"></ul>
+        </fieldset>
+        <fieldset class="form__address">
+          <legend class="form__basket-legend">Address</legend>
+          <label for="firstname">First Name *</label>
+          <!-- First Name -->
+          <input
+            type="text"
+            class="basket__firstname"
+            name="firstname"
+            id="firstname"
+            placeholder="John"
+            required
+            minlength="1"
+            maxlength="30"
+          />
+          <!-- Last Name -->
+          <label for="lastname">Last Name *</label>
+          <input
+            type="text"
+            class="basket__lastname"
+            name="lastname"
+            id="lastname"
+            placeholder="Doe"
+            required
+            minlength="1"
+            maxlength="50"
+          />
+          <!-- Address -->
+          <label for="address">Address *</label>
+          <input
+            type="text"
+            class="basket__address"
+            name="address"
+            id="address"
+            placeholder="Address 1a"
+            required
+            minlength="1"
+            maxlength="50"
+          />
+          <!-- Postal Code -->
+          <label for="postalcode">Postal Code *</label>
+          <input
+            type="number"
+            class="basket__postalcode"
+            name="postalcode"
+            id="postalcode"
+            placeholder="0000"
+            required
+            pattern="[0-9]{4}"
+          />
+          <!-- Phone Number -->
+          <label for="phonenumber">Phone Number *</label>
+          <input
+            type="tel"
+            class="basket__phonenumber"
+            name="phonenumber"
+            id="phonenumber"
+            placeholder="12345678"
+            required
+            pattern="[0-9]{8}"
+          />
+        </fieldset>
+
+        <!-- Check if shipping address is same as address -->
+        <div class="form__shipping-same-as-address">
+          <input
+            type="radio"
+            class="form__shipping-same-as-address-input"
+            name="same-as-address"
+          />
+          <label for="same-as-address" class=""
+            >Check if shipping address is same as address</label
+          >
+        </div>
+
+        <!-- Shipping Address -->
+        <fieldset class="form__shipping">
+          <legend class="form__basket-legend">Address</legend>
+          <label for="firstname">First Name *</label>
+          <!-- First Name -->
+          <input
+            type="text"
+            class="basket__firstname"
+            name="firstname"
+            id="shipping-firstname"
+            placeholder="John"
+            required
+            minlength="1"
+            maxlength="30"
+          />
+          <!-- Last Name -->
+          <label for="lastname">Last Name *</label>
+          <input
+            type="text"
+            class="basket__lastname"
+            name="lastname"
+            id="shipping-lastname"
+            placeholder="Doe"
+            required
+            minlength="1"
+            maxlength="50"
+          />
+          <!-- Address -->
+          <label for="address">Address *</label>
+          <input
+            type="text"
+            class="basket__address"
+            name="address"
+            id="shipping-address"
+            placeholder="Address 1a"
+            required
+            minlength="1"
+            maxlength="50"
+          />
+          <!-- Postal Code -->
+          <label for="postalcode">Postal Code *</label>
+          <input
+            type="number"
+            class="basket__postalcode"
+            name="postalcode"
+            id="shipping-postalcode"
+            placeholder="0000"
+            required
+            pattern="[0-9]{4}"
+          />
+          <!-- Phone Number -->
+          <label for="phonenumber">Phone Number *</label>
+          <input
+            type="tel"
+            class="basket__phonenumber"
+            name="phonenumber"
+            id="shipping-phonenumber"
+            placeholder="12345678"
+            required
+            pattern="[0-9]{8}"
+          />
+        </fieldset>
+
+        <!-- Payment Method -->
+        <fieldset>
+          <legend class="form__basket-legend">Payment Details</legend>
+          <label for="payment-method">Payment Method *</label>
+
+          <select name="payment-method" id="payment-method" class="input-field">
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Visa">Vipps</option>
+          </select>
+
+          <label for="card-number">Card Number *</label>
+          <input
+            type="number"
+            class="input-field"
+            required
+            placeholder="0000 0000 0000 0000"
+            pattern="[0-9]{16}"
+          />
+
+          <label for="cvc">CVC *</label>
+          <input
+            type="number"
+            class="cvc"
+            required
+            placeholder="000"
+            pattern="[0-9]{3}"
+          />
+
+          <label for="expiry-date">Expiry Date *</label>
+          <input
+            type="text"
+            class="expiry-date"
+            format="MM/YY"
+            placeholder="MM/YY"
+            minlength="4"
+            maxlength="5"
+            required
+          />
+        </fieldset>
+        <button class="form__submit-button">Finish Order</button>
+      </form>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <h2 class="footer__heading">Stay up to date!</h2>
+      <div class="footer__socials-container">
+        <ul class="footer__socials-list">
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="../assets/icons/facebook.svg"
+                alt="Image with link to Facebook"
+            /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="../assets/icons/instagram.svg"
+                alt="Image with link to Instagram"
+            /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img src="../assets/icons/x.svg" alt="Image with link to X"
+            /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="../assets/icons/tiktok.svg"
+                alt="Image with link to Tiktok"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copyright">
+        &copy; 2024 Storename. All rights reserved.
+      </p>
+    </footer>
+    <script src="../js/basket.js"></script>
+  </body>
+</html>

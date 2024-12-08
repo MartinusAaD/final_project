@@ -31,7 +31,6 @@ main {
   display: flex;
   align-items: center;
   overflow-x: auto; /* Sidescroll grabbed from chat gpt */
-  scrollbar-color: green;
   flex-wrap: nowrap;
   color: var(--font-color-light);
   gap: var(--spacing-medium);
@@ -110,4 +109,8 @@ main {
 
 .product__basket:active .product__add-to-basket {
   transform: scale(1);
+}
+
+/* Media Queries */
+@media screen and (max-width: 617px) {
 }
