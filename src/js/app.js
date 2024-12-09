@@ -158,7 +158,7 @@ const productsArray = [
   },
 ];
 
-// Filtering Categories
+// Filtering Products by Categories
 // Temp solution
 const categoriesArray = ["Consoles", "Games"];
 
@@ -174,9 +174,9 @@ const gamesArray = productsArray.filter(
 
 // Main Queries
 const main = document.querySelector("main");
+const searchInput = document.querySelector(".search__input");
 
-//
-//
+
 // Adding Container Categories and products
 for (let i = 0; i < 2; i++) {
   // Create Product Container and Header

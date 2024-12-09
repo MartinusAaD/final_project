@@ -4,6 +4,7 @@ const ordernumber = document.querySelector(".ordernumber");
 const email = document.querySelector(".email");
 const phonenumber = document.querySelector(".phonenumber");
 const message = document.querySelector(".message");
+const messagePopup = document.querySelector(".message-popup");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -15,8 +16,13 @@ form.addEventListener("submit", (e) => {
     phonenumber.value,
     message.value
   );
-
   form.reset();
+
+  messagePopup.style.display = "block";
+
+  setTimeout(() => {
+    messagePopup.style.display = "none";
+  }, 3000);
 });
 
 const storeData = (fullname, ordernumber, email, phonenumber, message) => {

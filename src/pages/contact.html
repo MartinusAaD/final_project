@@ -60,7 +60,7 @@
     <!-- Main -->
     <main>
       <form class="form__contact-container">
-        <label for="fullname">Full Name: </label>
+        <label for="fullname">Full Name * </label>
         <input
           type="text"
           class="fullname"
@@ -69,16 +69,7 @@
           placeholder="John Doe"
           minlength="1"
         />
-        <label for="ordernumber">Order Number: </label>
-        <input
-          type="text"
-          class="ordernumber"
-          name="ordernumber"
-          required
-          placeholder="Minimum of 7 numbers"
-          pattern="[0-9]{7-999}"
-        />
-        <label for="email">Email: </label>
+        <label for="email">Email *</label>
         <input
           type="email"
           class="email"
@@ -87,7 +78,7 @@
           placeholder="john.doe@email.com"
           minlength="1"
         />
-        <label for="">Phone Number: </label>
+        <label for="">Phone Number *</label>
         <input
           type="tel"
           class="phonenumber"
@@ -96,7 +87,15 @@
           placeholder="12345678"
           pattern="[0-9]{8}"
         />
-        <label for="message">Message: </label>
+        <label for="ordernumber">Order Number</label>
+        <input
+          type="text"
+          class="ordernumber"
+          name="ordernumber"
+          placeholder="Minimum of 7 numbers"
+          pattern="[0-9]{7-999}"
+        />
+        <label for="message">Message *</label>
         <textarea
           class="message"
           name="message"
@@ -112,12 +111,17 @@
           class="files"
           name="files"
         />
+
         <p class="form__paragraph">
           An automatic reply will be sent to your email to confirm it has been
           received. Your message will be answered within 2 buisness days.
         </p>
         <button class="form__submit-button">Send Message</button>
       </form>
+
+      <div class="message-popup">
+        <p>Your message has been sent!</p>
+      </div>
     </main>
     <!-- Footer -->
     <footer>

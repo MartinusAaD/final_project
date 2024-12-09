@@ -62,3 +62,16 @@ textarea {
 .form__submit-button:active {
   opacity: 1;
 }
+
+.message-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: var(--font-size-medium);
+  padding: var(--spacing-small) var(--spacing-medium);
+  background-color: var(--color-primary);
+  border-radius: 0.4rem;
+  box-shadow: 0 0 0 1px white;
+}
