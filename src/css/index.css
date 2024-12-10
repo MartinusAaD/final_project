@@ -19,7 +19,7 @@ main {
 
 .products-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   color: var(--font-color-light);
@@ -41,7 +41,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-grow: 1;
   width: 250px;
+  max-width: 400px;
   height: 450px;
   background-color: var(--color-light);
   color: var(--font-color-dark);
@@ -53,6 +55,9 @@ main {
 
 .product__image {
   transition: 0.1s;
+  width: 220px;
+  height: 220px;
+  align-self: center;
 }
 
 .product-container:hover .product__image {

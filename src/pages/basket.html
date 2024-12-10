@@ -216,7 +216,7 @@
           <label for="card-number">Card Number *</label>
           <input
             type="number"
-            class="input-field"
+            class="payment__cardnumber"
             required
             placeholder="0000 0000 0000 0000"
             pattern="[0-9]{16}"
@@ -225,7 +225,7 @@
           <label for="cvc">CVC *</label>
           <input
             type="number"
-            class="cvc"
+            class="payment__cvc"
             required
             placeholder="000"
             pattern="[0-9]{3}"
@@ -234,7 +234,7 @@
           <label for="expiry-date">Expiry Date *</label>
           <input
             type="text"
-            class="expiry-date"
+            class="payment__expiry-date"
             format="MM/YY"
             placeholder="MM/YY"
             minlength="4"
@@ -283,5 +283,6 @@
       </p>
     </footer>
     <script src="../js/basket.js"></script>
+    <script src="../js/navbar.js"></script>
   </body>
 </html>
