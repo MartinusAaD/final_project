@@ -75,3 +75,9 @@ textarea {
   border-radius: 0.4rem;
   box-shadow: 0 0 0 1px white;
 }
+
+@media screen and (max-width: 880px) {
+  .form__contact-container {
+    width: 70%;
+  }
+}

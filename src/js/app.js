@@ -176,7 +176,6 @@ const gamesArray = productsArray.filter(
 const main = document.querySelector("main");
 const searchInput = document.querySelector(".search__input");
 
-
 // Adding Container Categories and products
 for (let i = 0; i < 2; i++) {
   // Create Product Container and Header
@@ -306,3 +305,170 @@ for (let i = 0; i < 2; i++) {
     }
   }
 }
+
+//-------------------------------------------------------------------------------
+//
+//
+//
+//
+// Everything below made by chatGPT to make the search engine work
+searchInput.addEventListener("input", () => {
+  const query = searchInput.value.toLowerCase().trim();
+
+  // Clear the main content
+  main.innerHTML = "";
+
+  // If the search query is empty, restore the original setup
+  if (query === "") {
+    restoreOriginalSetup();
+    return;
+  }
+
+  // Filter products by name, brand, or category
+  const filteredProducts = productsArray.filter(
+    (product) =>
+      product.name.toLowerCase().includes(query) ||
+      product.brand.toLowerCase().includes(query) ||
+      product.category.toLowerCase().includes(query)
+  );
+
+  // If no results, display a message
+  if (filteredProducts.length === 0) {
+    const noResultsMessage = document.createElement("p");
+    noResultsMessage.textContent = "No products found.";
+    noResultsMessage.style.textAlign = "center";
+    noResultsMessage.style.margin = "2rem";
+    main.append(noResultsMessage);
+    return;
+  }
+
+  // Display filtered products
+  const categoryContainer = document.createElement("div");
+  categoryContainer.classList.add("category-container");
+  const productsContainer = document.createElement("div");
+  productsContainer.classList.add("products-container");
+  main.append(categoryContainer);
+  categoryContainer.append(productsContainer);
+
+  // Add products to the container
+  filteredProducts.forEach((product) => {
+    // Creating product elements
+    const productContainer = document.createElement("div");
+    const productImage = document.createElement("img");
+    const productHeader = document.createElement("h3");
+    const productInfo = document.createElement("p");
+    const productPriceBasketContainer = document.createElement("div");
+    const productPrice = document.createElement("h4");
+    const productBasket = document.createElement("button");
+    const productAddToBasket = document.createElement("img");
+
+    // Adding classes
+    productContainer.classList.add("product-container");
+    productImage.classList.add("product__image");
+    productHeader.classList.add("product__header");
+    productInfo.classList.add("product__info");
+    productPriceBasketContainer.classList.add(
+      "product__price-basket-container"
+    );
+    productPrice.classList.add("product__price");
+    productBasket.classList.add("product__basket");
+    productAddToBasket.classList.add("product__add-to-basket");
+
+    // Appending product container
+    productsContainer.append(productContainer);
+    productContainer.append(
+      productImage,
+      productHeader,
+      productInfo,
+      productPriceBasketContainer
+    );
+    productPriceBasketContainer.append(productPrice, productBasket);
+    productBasket.append(productAddToBasket);
+
+    // Adding product content
+    productImage.src = product.image;
+    productHeader.textContent = product.name;
+    productInfo.textContent = product.info;
+    productPrice.textContent = `${product.price} ,-`;
+    productAddToBasket.src = "../src/assets/icons/plus.svg";
+  });
+});
+
+// Function to restore the original setup
+function restoreOriginalSetup() {
+  main.innerHTML = ""; // Clear the main content
+
+  // Loop through the categories
+  categoriesArray.forEach((category, index) => {
+    const categoryContainer = document.createElement("div");
+    const categoryHeader = document.createElement("h2");
+    const productsContainer = document.createElement("div");
+
+    // Adding Classes
+    categoryContainer.classList.add("category-container");
+    categoryHeader.classList.add("category__header");
+
+    // Apply specific classes for scrollable/non-scrollable containers
+    if (index === 0) {
+      productsContainer.classList.add("products-container--scroll");
+    } else {
+      productsContainer.classList.add("products-container");
+    }
+
+    // Appending
+    main.append(categoryContainer);
+    categoryContainer.append(categoryHeader, productsContainer);
+
+    // Adding Category Headers
+    categoryHeader.textContent = category;
+
+    // Add products based on category
+    const productsArrayToUse =
+      category.toLowerCase() === "consoles" ? consolesArray : gamesArray;
+
+    productsArrayToUse.forEach((product) => {
+      // Creating product elements
+      const productContainer = document.createElement("div");
+      const productImage = document.createElement("img");
+      const productHeader = document.createElement("h3");
+      const productInfo = document.createElement("p");
+      const productPriceBasketContainer = document.createElement("div");
+      const productPrice = document.createElement("h4");
+      const productBasket = document.createElement("button");
+      const productAddToBasket = document.createElement("img");
+
+      // Adding classes
+      productContainer.classList.add("product-container");
+      productImage.classList.add("product__image");
+      productHeader.classList.add("product__header");
+      productInfo.classList.add("product__info");
+      productPriceBasketContainer.classList.add(
+        "product__price-basket-container"
+      );
+      productPrice.classList.add("product__price");
+      productBasket.classList.add("product__basket");
+      productAddToBasket.classList.add("product__add-to-basket");
+
+      // Appending product container
+      productsContainer.append(productContainer);
+      productContainer.append(
+        productImage,
+        productHeader,
+        productInfo,
+        productPriceBasketContainer
+      );
+      productPriceBasketContainer.append(productPrice, productBasket);
+      productBasket.append(productAddToBasket);
+
+      // Adding product content
+      productImage.src = product.image;
+      productHeader.textContent = product.name;
+      productInfo.textContent = product.info;
+      productPrice.textContent = `${product.price} ,-`;
+      productAddToBasket.src = "../src/assets/icons/plus.svg";
+    });
+  });
+}
+
+// Initial Setup
+restoreOriginalSetup();
