@@ -116,6 +116,6 @@ main {
   transform: scale(1);
 }
 
-/* Media Queries */
+/* Media Screen Queries */
 @media screen and (max-width: 617px) {
 }

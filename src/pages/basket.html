@@ -19,6 +19,7 @@
         <h1 class="navbar__header">
           <a href="../index.html">Storename</a>
         </h1>
+        <!-- Search Bar -->
         <div class="navbar__search">
           <label for="search"></label>
           <input
@@ -29,6 +30,7 @@
             placeholder=" ..."
           />
         </div>
+        <!-- Navigational Links -->
         <ul class="navbar__navigation">
           <li>
             <a href="../index.html" class="navbar__navigation-link">Home</a>
@@ -47,6 +49,7 @@
             <a href="./login.html" class="navbar__navigation-link">Login</a>
           </li>
         </ul>
+        <!-- Hamburger Menu -->
         <div class="navbar__navigation-menu">
           <button class="navigation-menu__hamburger-menu">
             <img
@@ -143,7 +146,7 @@
         <fieldset class="form__shipping">
           <legend class="form__basket-legend">Shipping Address</legend>
           <label for="firstname">First Name *</label>
-          <!-- First Name -->
+          <!-- Shipping - First Name -->
           <input
             type="text"
             class="basket__firstname"
@@ -154,7 +157,7 @@
             minlength="1"
             maxlength="30"
           />
-          <!-- Last Name -->
+          <!-- Shipping - Last Name -->
           <label for="lastname">Last Name *</label>
           <input
             type="text"
@@ -166,7 +169,7 @@
             minlength="1"
             maxlength="50"
           />
-          <!-- Address -->
+          <!-- Shipping - Address -->
           <label for="address">Address *</label>
           <input
             type="text"
@@ -178,7 +181,7 @@
             minlength="1"
             maxlength="50"
           />
-          <!-- Postal Code -->
+          <!-- Shipping - Postal Code -->
           <label for="postalcode">Postal Code *</label>
           <input
             type="number"
@@ -189,7 +192,7 @@
             required
             pattern="[0-9]{4}"
           />
-          <!-- Phone Number -->
+          <!-- Shipping - Phone Number -->
           <label for="phonenumber">Phone Number *</label>
           <input
             type="tel"
@@ -207,12 +210,14 @@
           <legend class="form__basket-legend">Payment Details</legend>
           <label for="payment-method">Payment Method *</label>
 
+          <!-- Payment Method -->
           <select name="payment-method" id="payment-method" class="input-field">
             <option value="Visa">Visa</option>
             <option value="Mastercard">Mastercard</option>
             <option value="Visa">Vipps</option>
           </select>
 
+          <!-- Card Number -->
           <label for="card-number">Card Number *</label>
           <input
             type="number"
@@ -222,6 +227,7 @@
             pattern="[0-9]{16}"
           />
 
+          <!-- cvc -->
           <label for="cvc">CVC *</label>
           <input
             type="number"
@@ -231,6 +237,7 @@
             pattern="[0-9]{3}"
           />
 
+          <!-- Expiry Date -->
           <label for="expiry-date">Expiry Date *</label>
           <input
             type="text"
@@ -242,9 +249,12 @@
             required
           />
         </fieldset>
+
+        <!-- Submit Button -->
         <button class="form__submit-button">Finish Order</button>
       </form>
     </main>
+
     <!-- Footer -->
     <footer>
       <h2 class="footer__heading">Stay up to date!</h2>

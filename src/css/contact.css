@@ -5,6 +5,8 @@ main {
   padding: var(--spacing-large) 0;
 }
 
+/* Form Styling */
+
 label {
   margin-left: 2px;
 }
@@ -44,6 +46,7 @@ textarea {
   font-style: italic;
 }
 
+/* Form Button */
 .form__submit-button {
   width: 50%;
   font-weight: bold;
@@ -63,6 +66,7 @@ textarea {
   opacity: 1;
 }
 
+/* Message Sent Popup */
 .message-popup {
   display: none;
   position: fixed;
@@ -76,6 +80,7 @@ textarea {
   box-shadow: 0 0 0 1px white;
 }
 
+/* Media Screen Queries */
 @media screen and (max-width: 880px) {
   .form__contact-container {
     width: 70%;

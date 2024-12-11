@@ -19,6 +19,7 @@
         <h1 class="navbar__header">
           <a href="../index.html">Storename</a>
         </h1>
+        <!-- Search Bar -->
         <div class="navbar__search">
           <label for="search"></label>
           <input
@@ -29,6 +30,7 @@
             placeholder=" ..."
           />
         </div>
+        <!-- Navigational Links -->
         <ul class="navbar__navigation">
           <li>
             <a href="../index.html" class="navbar__navigation-link">Home</a>
@@ -47,6 +49,7 @@
             <a href="./login.html" class="navbar__navigation-link">Login</a>
           </li>
         </ul>
+        <!-- Hamburger Menu -->
         <div class="navbar__navigation-menu">
           <button class="navigation-menu__hamburger-menu">
             <img
@@ -60,6 +63,7 @@
     <!-- Main -->
     <main>
       <form class="form__contact-container">
+        <!-- Full Name -->
         <label for="fullname">Full Name * </label>
         <input
           type="text"
@@ -69,6 +73,7 @@
           placeholder="John Doe"
           minlength="1"
         />
+        <!-- Email -->
         <label for="email">Email *</label>
         <input
           type="email"
@@ -78,6 +83,7 @@
           placeholder="john.doe@email.com"
           minlength="1"
         />
+        <!-- Phone Number -->
         <label for="">Phone Number *</label>
         <input
           type="tel"
@@ -87,6 +93,7 @@
           placeholder="12345678"
           pattern="[0-9]{8}"
         />
+        <!-- Order Number -->
         <label for="ordernumber">Order Number</label>
         <input
           type="text"
@@ -95,6 +102,7 @@
           placeholder="Minimum of 7 numbers"
           pattern="[0-9]{7-999}"
         />
+        <!-- Message -->
         <label for="message">Message *</label>
         <textarea
           class="message"
@@ -104,6 +112,7 @@
           minlength="1"
           maxlength="500"
         ></textarea>
+        <!-- Files -->
         <input
           type="file"
           multiple
@@ -116,13 +125,16 @@
           An automatic reply will be sent to your email to confirm it has been
           received. Your message will be answered within 2 buisness days.
         </p>
+        <!-- Submit Button -->
         <button class="form__submit-button">Send Message</button>
       </form>
 
+      <!-- Message Sent Popup -->
       <div class="message-popup">
         <p>Your message has been sent!</p>
       </div>
     </main>
+
     <!-- Footer -->
     <footer>
       <h2 class="footer__heading">Stay up to date!</h2>

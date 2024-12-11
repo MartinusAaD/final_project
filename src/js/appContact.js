@@ -1,3 +1,4 @@
+// Query Selectors
 const form = document.querySelector("form");
 const fullname = document.querySelector(".fullname");
 const ordernumber = document.querySelector(".ordernumber");
@@ -6,6 +7,7 @@ const phonenumber = document.querySelector(".phonenumber");
 const message = document.querySelector(".message");
 const messagePopup = document.querySelector(".message-popup");
 
+// Form Submit Action
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log("test");
@@ -25,6 +27,7 @@ form.addEventListener("submit", (e) => {
   }, 3000);
 });
 
+// Local Storing
 const storeData = (fullname, ordernumber, email, phonenumber, message) => {
   localStorage.setItem("Full Name", fullname);
   localStorage.setItem("Order Number", ordernumber);

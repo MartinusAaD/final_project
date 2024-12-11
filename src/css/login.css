@@ -16,6 +16,7 @@ input {
   border-radius: 0.4rem;
 }
 
+/* Login Form Styles */
 .form__login-container {
   width: 40%;
   display: flex;
@@ -62,6 +63,7 @@ input {
   opacity: 1;
 }
 
+/* Media Screen Queries */
 @media screen and (max-width: 880px) {
   .form__login-container {
     width: 60%;

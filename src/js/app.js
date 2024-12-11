@@ -49,7 +49,7 @@ const productsArray = [
   // Games
   // Nintendo
   {
-    name: "Hogwarts Legacy",
+    name: "Hogwarts Legacy - Switch",
     image: "../src/assets/images/nintendo/hogwarts-legacy.png",
     info: "Hogwarts Legacy is an open-world RPG set in the Wizarding World, featuring magic, exploration, and adventure.",
     price: 549,
